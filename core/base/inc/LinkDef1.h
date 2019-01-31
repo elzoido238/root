@@ -42,6 +42,7 @@
 #pragma link C++ enum EObjBits;
 #pragma link C++ enum EEnvLevel;
 #pragma link C++ enum EColor;
+#pragma link C++ enum EColorPalette;
 #pragma link C++ enum ELineStyle;
 #pragma link C++ enum EMarkerStyle;
 

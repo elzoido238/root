@@ -12,37 +12,14 @@
 #ifndef ROOT_TStyle
 #define ROOT_TStyle
 
-
-//////////////////////////////////////////////////////////////////////////
-//                                                                      //
-// TStyle                                                               //
-//                                                                      //
-// A collection of all graphics attributes.                             //
-//                                                                      //
-//////////////////////////////////////////////////////////////////////////
-
-
-#ifndef ROOT_TNamed
 #include "TNamed.h"
-#endif
-#ifndef ROOT_TAttAxis
 #include "TAttAxis.h"
-#endif
-#ifndef ROOT_TAttLine
 #include "TAttLine.h"
-#endif
-#ifndef ROOT_TAttFill
 #include "TAttFill.h"
-#endif
-#ifndef ROOT_TAttText
 #include "TAttText.h"
-#endif
-#ifndef ROOT_TAttMarker
 #include "TAttMarker.h"
-#endif
-#ifndef ROOT_TArrayI
 #include "TArrayI.h"
-#endif
+#include "TColor.h"
 
 class TBrowser;
 
@@ -406,7 +383,7 @@ public:
    void             ToggleEditor() { fShowEditor = fShowEditor ? 0 : 1; }
    void             ToggleToolBar() { fShowToolBar = fShowToolBar ? 0 : 1; }
    void             SetIsReading(Bool_t reading=kTRUE);
-   void             SetPalette(Int_t ncolors=0, Int_t *colors=0, Float_t alpha=1.);
+   void             SetPalette(Int_t ncolors=kBird, Int_t *colors=0, Float_t alpha=1.);
    void             SavePrimitive(std::ostream &out, Option_t * = "");
    void             SaveSource(const char *filename, Option_t *option=0);
 
